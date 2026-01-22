@@ -1,0 +1,10 @@
+services:
+  app-admin:
+    image: node:20-alpine
+    working_dir: /app
+    ports:
+      - "8082:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: sh -c "npm install && npm run dev"
