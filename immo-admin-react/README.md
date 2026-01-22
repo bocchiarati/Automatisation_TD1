@@ -11,16 +11,16 @@ Currently, two official plugins are available:
 # Lancer le projet
 ## Partie admin
 Aller dans le répertoire "immo-admin-react" :
-```
+```bash
 cd immo-admin-react
 ```
 
 Lancer le projet à travers docker :
-```
+```bash
 docker compose up
 ```
 
 Pour accéder à l'application :
-```
+```bash
 localhost:8082
 ```

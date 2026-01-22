@@ -21,16 +21,16 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 # Lancer le projet
 ## Partie client
 Aller dans le répertoire "immo-client-vue" :
-```
+```bash
 cd immo-client-vue
 ```
 
 Lancer le projet à travers docker :
-```
+```bash
 docker compose up
 ```
 
 Pour accéder à l'application :
-```
+```bash
 localhost:8081
 ```
