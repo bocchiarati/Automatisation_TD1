@@ -3,7 +3,7 @@ services:
     build:
       context: ./docker/php
     ports:
-      - "${PHP_PORT:-8081}:80"
+      - "${PHP_PORT:-8080}:80"
     volumes:
       - ./:/var/php
     working_dir: /var/php
@@ -22,4 +22,4 @@ services:
     image: adminer
     restart: always
     ports :
-      - "8082:8080"
+      - "8888:8080"
