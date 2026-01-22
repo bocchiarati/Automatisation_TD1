@@ -1,0 +1,23 @@
+services:
+  php:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - ${SERVER_PORT:-7080}:80
+    volumes:
+      - ./:/var/php
+    working_dir: /var/php
+    command: php -S 0.0.0.0:80 -t ./public
+
+  db:
+    image: 'mariadb:latest'
+    env_file: .env
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./datas:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    ports:
+      - '8080:8080'
