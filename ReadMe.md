@@ -16,3 +16,60 @@ Les deux projets front devraient être presque identiques !
 
 ## Troisième étape
 Pour rendre le projet, j'attends un lien vers un dépôt git. Il faudra bien préciser qui est dans le projet et que j'ai bien accès au dépôt.
+
+
+# Lancer le projet
+## Partie api
+Aller dans le répertoire "immo-api-php" :
+```
+cd immo-api-php
+```
+
+Lancer le conteneur php pour mettre à jour le composer :
+```
+docker compose run --rm php
+composer install
+```
+
+Lancer le projet à travers docker :
+```
+docker compose up
+```
+
+Pour accéder à l'application :
+```
+localhost:8080
+```
+
+
+## Partie client
+Aller dans le répertoire "immo-client-vue" :
+```
+cd immo-client-vue
+```
+
+Lancer le projet à travers docker :
+```
+docker compose up
+```
+
+Pour accéder à l'application :
+```
+localhost:8081
+```
+
+## Partie admin
+Aller dans le répertoire "immo-admin-react" :
+```
+cd immo-admin-react
+```
+
+Lancer le projet à travers docker :
+```
+docker compose up
+```
+
+Pour accéder à l'application :
+```
+localhost:8082
+```
