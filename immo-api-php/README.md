@@ -30,3 +30,8 @@ Pour accéder à l'application :
 ```
 localhost:8080
 ```
+
+Pour accéder à la base de données :
+```
+localhost:8888
+```
